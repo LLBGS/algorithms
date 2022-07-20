@@ -1,5 +1,3 @@
-// test true cases
-
 import { assertEquals } from 'https://deno.land/std@0.148.0/testing/asserts.ts';
 import { verifyTriangle } from './verify-if-is-triangle.ts';
 
@@ -25,8 +23,6 @@ Deno.test('Should be return true when the triangle exists', () => {
     assertEquals(verifyTriangle(mock.a, mock.b, mock.c), true);
   });
 });
-
-// test false cases
 
 Deno.test('Should be return false when the triangle not exists', () => {
   const mocks = [
